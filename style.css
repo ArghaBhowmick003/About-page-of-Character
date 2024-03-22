@@ -3,13 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Zen Dots", sans-serif;
-    background-color: #d9d7d7;
+    
 }
 
 html,
 body {
     height: 100%;
     width: 100%;
+    background-color: #d9d7d7;
 }
 
 #main {
@@ -23,7 +24,8 @@ body {
 }
 
 #left-top-left {
-    padding: 40px;
+    padding: 20px;
+    width: fit-content;
 }
 
 #square {
@@ -31,7 +33,7 @@ body {
     width: 25px;
     background-color: black;
     rotate: 45deg;
-    border-radius: 7px;
+    border-radius: 5px;
 }
 
 #left-top-right {
@@ -98,11 +100,11 @@ body {
     width: 100%;
     object-fit: cover;
     object-position: 50% 20%;
-    border-radius: 25%;
+    border-radius: 15%;
     box-shadow: 10px 10px 40px grey;
 }
 
-#arrow {
+/* #arrow {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -115,10 +117,9 @@ body {
     padding: 20px;
 }
 
-#arrow i {
-    font-size: 50px;
-    font-weight: 100;
-}
+#arrow>svg {
+    color: white;
+} */
 
 @media (max-width:600px) {
     #main {
@@ -185,16 +186,16 @@ body {
         box-shadow: 10px 10px 40px grey;
     }
 
-    #arrow {
+    /* #arrow {
         top: 50%;
         left: 40%;
         rotate: 90deg;
         padding: 10px;
     }
 
-    #arrow i {
-        font-size: 20px;
-    }
+    #arrow>svg {
+        width: 10px;
+    } */
 
     #right {
         grid-column: 1/4;
